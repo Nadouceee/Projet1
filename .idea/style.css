@@ -65,7 +65,15 @@
     gap: 15px;
 }
 
-.battle-layout
 .boss-name{
-    font-family: "Montserrat"
+    font-family: "areminiscentsmile"; font-size: 3em;
+}
+
+.character-card{
+    font-family: Actay;
+    font-weight: bold;
+    font-size: 20px;
+}
+.spell-rune {
+    will-change: transform;
 }
