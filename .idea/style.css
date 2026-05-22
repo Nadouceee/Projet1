@@ -1,9 +1,10 @@
+
 .inventory-slot {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     padding: 10px;
-    border: 2px solid #8b5a2b;
-    background-color: #3e2723;
+    border: 2px solid #c6a587;
+    background-color: #400909;
     color: #ffffff;
 }
 
@@ -12,15 +13,18 @@
 }
 
 .inventory-slot {
-    border: 8px solid #d4af37;
+    border: 8px solid #e4bfaf;
 }
 
 #cursed-ring { border-color: #9c27b0; } /* Poids de spécificité : 1-0-0 */
 
 .purified-item { border-color: #00e676; } /* Poids de spécificité : 0-1-0 */
+
 .party-container {
     display: flex;
+    flex-direction: column;
 }
+
 .party-container {
     justify-content: space-between;
 }
@@ -38,6 +42,8 @@
     display: inline-block;
     padding: 20px;
     background-color: #263238;
+    color: #b3cf4f;
+    font-family: Montserrat;
     cursor: pointer;
     transform: scale(1);
     /* Placement de la transition sur l'état INITIAL pour gérer l'aller et le retour */
@@ -51,5 +57,15 @@
 .spell-rune {
     will-change: transform;
 }
+.spell-book {
+    display: grid;
+}
+.spell-book {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
 
 .battle-layout
+.boss-name{
+    font-family: "Montserrat"
+}
