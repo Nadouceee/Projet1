@@ -1,0 +1,55 @@
+.inventory-slot {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border: 2px solid #8b5a2b;
+    background-color: #3e2723;
+    color: #ffffff;
+}
+
+.inventory-slot {
+    box-sizing: border-box;
+}
+
+.inventory-slot {
+    border: 8px solid #d4af37;
+}
+
+#cursed-ring { border-color: #9c27b0; } /* Poids de spécificité : 1-0-0 */
+
+.purified-item { border-color: #00e676; } /* Poids de spécificité : 0-1-0 */
+.party-container {
+    display: flex;
+}
+.party-container {
+    justify-content: space-between;
+}
+.spell-book {
+    display: grid;
+}
+.spell-book {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.ultimate-spell {
+    grid-column: span 2;
+}
+.spell-rune {
+    display: inline-block;
+    padding: 20px;
+    background-color: #263238;
+    cursor: pointer;
+    transform: scale(1);
+    /* Placement de la transition sur l'état INITIAL pour gérer l'aller et le retour */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.spell-rune:hover {
+    background-color: #dd2c00;
+    transform: scale(1.1); /* Augmentation d'échelle de 10% */
+    box-shadow: 0 0 20px #ff3d00;
+}
+.spell-rune {
+    will-change: transform;
+}
+
+.battle-layout
